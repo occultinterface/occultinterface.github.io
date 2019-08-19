@@ -1,0 +1,49 @@
+body {
+  font-family: "Libre Baskerville", serif;
+  align-items: center;
+}
+
+#container {
+  width: 50%;
+  max-width: 1000px;
+  min-width: 500px;
+  margin: auto;
+}
+
+/*Typography*/
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+i {
+  font-style: italic;
+  ;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+mark {
+  background: linear-gradient(45deg, #f3caf4, #caeaf7, #f3caf4);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #caeaf7;
+}
