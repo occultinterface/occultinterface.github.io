@@ -3,11 +3,50 @@ body {
   align-items: center;
 }
 
-#container {
-  width: 50%;
-  max-width: 1000px;
-  min-width: 500px;
-  margin: auto;
+@media (max-width: 800px) {
+  #gridContainer {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 800px) {
+  #gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "MarginLeft OuterLeft InnerLeft Centre InnerRight OuterRight MarginRight";
+    grid-gap: 2em;
+    border-style: solid;
+    border-color: red;
+  }
+
+  /*Grid item alignment options*/
+  .spanAll {
+    grid-column-start: MarginLeft;
+    grid-column-end: MarginRight;
+  }
+
+  .spanContent {
+    grid-column-start: OuterLeft;
+    grid-column-end: OuterRight;
+    border-style: solid;
+  }
+
+  .threeLeft {
+    grid-column-start: OuterLeft;
+    grid-column-end: Centre;
+    border-style: solid;
+  }
+
+  .threeRight {
+    grid-column-start: Centre;
+    grid-column-end: OuterRight;
+    border-style: dashed;
+  }
+
+  .threeCentre {
+    grid-column-start: InnerLeft;
+    grid-column-end: InnerRight;
+  }
 }
 
 /*Typography*/
