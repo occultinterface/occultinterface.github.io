@@ -1,6 +1,5 @@
 body {
   font-family: "Libre Baskerville", serif;
-  align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -29,81 +28,77 @@ body {
     grid-column-end: Column6;
   }
 
-  .threeLeft {
+  .quadOne {
+    grid-column-start: MarginLeft;
+    grid-column-end: Column1;
+  }
+
+  .quadTwo {
+    grid-column-start: Column2;
+    grid-column-end: Column3;
+  }
+
+  .quadThree {
+    grid-column-start: Column4;
+    grid-column-end: Column5;
+  }
+
+  .quadFour {
+    grid-column-start: Column6;
+    grid-column-end: MarginRight;
+  }
+
+  .half {
     grid-column-start: MarginLeft;
     grid-column-end: Column3;
   }
 
-  .threeRight {
+  .halfTwo {
     grid-column-start: Column4;
-    grid-column-end: Column6;
+    grid-column-end: MarginRight;
   }
 
-  .centred {
-    grid-column-start: Column2;
-    grid-column-end: Column5;
+  /*Typography*/
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
-}
 
-/*Dividing the Grid into three equal columns*/
-.triadLeft {
-  grid-column-start: Column1;
-  grid-column-end: Column2;
-}
+  i {
+    font-style: italic;
+    ;
+  }
 
-.triadCentre {
-  grid-column-start: Column3;
-  grid-column-end: Column4;
-}
+  h1 {
+    font-family: Futura, sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
 
-.triadRight {
-  grid-column-start: Column5;
-  grid-column-end: Column6;
-}
+  h2 {
+    font-size: 2rem;
+    font-style: italic;
+  }
 
-/*Typography*/
-p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-}
+  h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
 
-i {
-  font-style: italic;
-  ;
-}
+  h4 {
+    font-size: 1.3rem;
+  }
 
-h1 {
-  font-family: Futura, sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-}
+  mark {
+    background: #FCDC8D;
+  }
 
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-style: italic;
-}
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: red;
+  }
 
-h3 {
-  font-size: 1.5rem;
-  font-style: italic;
-}
-
-h4 {
-  font-size: 1.3rem;
-}
-
-mark {
-  background: #f3caf4;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-color: red;
-}
-
-.divider {
-  border-top: 1px solid;
-}
+  .divider {
+    border-top: 3px solid;
+  }
